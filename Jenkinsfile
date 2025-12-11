@@ -91,7 +91,7 @@ pipeline {
             steps {
                 git credentialsId: GIT_CREDENTIONALS_ID, url: GIT_REPOSITORY_DEP, branch: 'main'
                 script {
-                    '''
+                    sh '''
                     git config --global user.email ${GIT_EMAIL}
                     git config --global user.name ${GIT_NAME}
                     sed -i s@${AWS_ECR_URI}/${AWS_ECR_IMAGE_NAME}:.*@${AWS_ECR_URI}/${AWS_ECR_IMAGE_NAME}:${BUILD_NUMBER}@g test-dep.yml
