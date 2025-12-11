@@ -10,7 +10,7 @@ pipeline {
         GIT_CREDENTIONALS_ID = 'git_cre'
         GIT_EMAIL = 'jin3749@gmail.com'
         GIT_NAME = 'jinhyung99'
-        GIT_REPOSITORY_DEP = ''git@github.com:jinhyung99/deployment.git'
+        GIT_REPOSITORY_DEP = 'git@github.com:jinhyung99/deployment.git'
       
         // AWS ECR
         AWS_ECR_CREDENTIAL_ID = 'aws_cre'
